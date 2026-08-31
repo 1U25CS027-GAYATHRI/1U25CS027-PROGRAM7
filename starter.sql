@@ -1,26 +1,9 @@
-CREATE DATABASE GA25;
-USE GA25;
+create database college13;
+use college13;
 
-CREATE TABLE Marksheet (
-    RollNo INT PRIMARY KEY,
-    Name VARCHAR(50),
-    Department VARCHAR(20),
-    Marks INT
-);
-
--- STEP 2: Insert the following records
--- 1 Arun CSE 85
--- 2 Divya IT 78
--- 3 Karthik CSE 92
--- 4 Nisha ECE 67
--- 5 Rahul IT 88
-
-INSERT INTO Marksheet (RollNo, Name, Department, Marks)
-VALUES
-(1, 'Arun', 'CSE', 85),
-(2, 'Divya', 'IT', 78),
-(3, 'Karthik', 'CSE', 92),
-(4, 'Nisha', 'ECE', 67),
-(5, 'Rahul', 'IT', 88);
+create table marksheet(RollNo integer(5) primary key,Name varchar(20),Department varchar(10),marks integer(5));
+desc marksheet;
+select*from student
+insert marksheet values("1","Arun","CSE","85"),("2","Divya","IT","78"),("3","Karthik","CSE","92"),("4","Nisha","ECE","67"),("5","Rahul","IT","88");
 
 select * from marksheet where marks>80 order by marks DESC;
