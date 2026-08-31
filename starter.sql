@@ -1,9 +1,5 @@
--- Marksheet Assignment
--- Student Name: __________________
--- Roll No: _______________________
-
--- STEP 1: Create the Marksheet table
--- Fields: RollNo, Name, Department, Marks
+CREATE DATABASE GA25;
+USE GA25;
 
 CREATE TABLE Marksheet (
     RollNo INT PRIMARY KEY,
@@ -27,9 +23,4 @@ VALUES
 (4, 'Nisha', 'ECE', 67),
 (5, 'Rahul', 'IT', 88);
 
--- STEP 3:
--- Display students whose marks are greater than 80.
--- Sort the result in descending order of Marks.
-
--- Write your SELECT query below:
-
+select * from marksheet where marks>80 order by marks DESC;
